@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="pet.js"></script>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon" />
+    <title>PetShop</title>
+</head>
+<body>
+<div class="container">
+    <h1>Pet Shop</h1>
+    <label for="servico">Cliente e Serviço:</label>
+    <input type="text" id="servico" placeholder="Nome cliente e serviço">
+    
+    <label for="valor">Valor:</label>
+    <input type="text" id="valor" placeholder="Valor em reais">
+    
+    <label for="categoria">Categoria:</label>
+    <select id="categoria">
+        <option value="Banho">Banho</option>
+        <option value="Tosa">Tosa</option>
+        <option value="Consulta Veterinária">Consulta Veterinária</option>
+        <option value="Vacinação">Vacinação</option>
+    </select>
+    
+    <button onclick="registrarServico()">Registrar Serviço</button>
+    <button onclick="gerarRelatorio()">Gerar Relatório</button>
+    <button onclick="limparRelatorio()">Limpar Relatório</button>
+    
+    <div id="relatorio"></div>
+</div>
+</body>
+</html>
